@@ -25,3 +25,8 @@ function loginMessage(userName){
 }
 console.log(loginMessage())
 // If no argument is passed, the output of this function is "undefined just logged in"
+function calculateCartPrice(...num1){
+    return num1;//returns array of all the values
+}
+console.log(calculateCartPrice(200, 400, 500));//:prints"[200, 400, 500]"
+//"..."is rest and spread operator: in this caseit is spread
