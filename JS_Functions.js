@@ -30,3 +30,22 @@ function calculateCartPrice(...num1){
 }
 console.log(calculateCartPrice(200, 400, 500));//:prints"[200, 400, 500]"
 //"..."is rest and spread operator: in this caseit is spread
+
+const user={
+userName: "Samarth",
+price: 199
+}
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.userName} and price is ${anyObject.price}`);
+}
+handleObject(user)
+handleObject({
+    userName:"Tushar",
+    price: 400
+})
+const myArray = [200, 400, 800, 1600];
+function returnSecondValue(array){
+    return array[1];
+}
+const num = returnSecondValue(myArray);
+console.log(num);
